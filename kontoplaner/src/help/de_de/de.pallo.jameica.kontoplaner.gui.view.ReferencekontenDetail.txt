@@ -1,0 +1,9 @@
+<form>
+	<p>
+		<span color="header" font="header">Konto Details</span>
+	</p>
+
+	<p>
+		Informationen über ihr Konto, abzüglich der Informationen über ihre Ausgaben, bzw. Sparziele.
+	</p>
+</form>

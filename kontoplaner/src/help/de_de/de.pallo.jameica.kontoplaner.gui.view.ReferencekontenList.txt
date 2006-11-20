@@ -1,0 +1,9 @@
+<form>
+	<p>
+		<span color="header" font="header">Liste der Konten</span>
+	</p>
+
+	<p>
+		Wählen Sie ihr Konto aus, oder klicken Sie auf "Aktualisieren" um Ihre Konten mit hibiscus zu synchronisieren.
+	</p>
+</form>

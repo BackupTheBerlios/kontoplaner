@@ -1,7 +1,7 @@
 /**********************************************************************
  * $Source: /home/xubuntu/berlios_backup/github/tmp-cvs/kontoplaner/Repository/kontoplaner/src/de/pallo/jameica/kontoplaner/gui/menu/ReferencekontoListMenu.java,v $
- * $Revision: 1.1 $
- * $Date: 2006/11/20 17:48:46 $
+ * $Revision: 1.2 $
+ * $Date: 2006/11/20 20:01:52 $
  * $Author: pallo $
  * $Locker:  $
  * $State: Exp $
@@ -28,7 +28,7 @@ public class ReferencekontoListMenu extends ContextMenu
   public ReferencekontoListMenu()
     {
         // CheckedContextMenuItems will be disabled, if the user clicks into an empty space of the table
-        addItem(new CheckedContextMenuItem(Settings.i18n().tr("Open..."),new ReferencekontoDetail()));
+        addItem(new CheckedContextMenuItem(Settings.i18n().tr("Öffnen..."),new ReferencekontoDetail()));
 
     }
 }
@@ -36,7 +36,10 @@ public class ReferencekontoListMenu extends ContextMenu
 
 /**********************************************************************
  * $Log: ReferencekontoListMenu.java,v $
- * Revision 1.1  2006/11/20 17:48:46  pallo
- * Initial revision
+ * Revision 1.2  2006/11/20 20:01:52  pallo
+ * added help and made translations
+ *
+ * Revision 1.1.1.1  2006/11/20 17:48:46  pallo
+ * no message
  *
  **********************************************************************/

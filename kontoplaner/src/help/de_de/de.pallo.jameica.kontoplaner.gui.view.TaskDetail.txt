@@ -1,0 +1,9 @@
+<form>
+	<p>
+		<span color="header" font="header">Task Details</span>
+	</p>
+
+	<p>
+		Erfassen Sie ihre Aufwendungen, die vom Referenzkonto reserviert werden sollen.
+	</p>
+</form>
