@@ -200,6 +200,7 @@ public class ReferencekontoImpl extends AbstractDBObject implements Referencekon
 
       // 3) We create the task list using getList(Class)
       DBIterator tasks = service.createList(Task.class);
+      tasks.setOrder("ORDER BY prioritaet, name");
 
       // 4) we add a filter to only query for tasks with our project id
       tasks.addFilter("referencekonto_id = " + this.getID());
