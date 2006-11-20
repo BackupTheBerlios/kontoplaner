@@ -1,7 +1,7 @@
 /**********************************************************************
  * $Source: /home/xubuntu/berlios_backup/github/tmp-cvs/kontoplaner/Repository/kontoplaner/src/de/pallo/jameica/kontoplaner/gui/view/Welcome.java,v $
- * $Revision: 1.2 $
- * $Date: 2006/11/20 20:05:32 $
+ * $Revision: 1.3 $
+ * $Date: 2006/11/20 20:10:30 $
  * $Author: pallo $
  * $Locker:  $
  * $State: Exp $
@@ -33,11 +33,11 @@ public class Welcome extends AbstractView
 	 */
 	public void bind() throws Exception
 	{
-		GUI.getView().setTitle(Settings.i18n().tr("Example plugin"));
-		
-		LabelGroup group = new LabelGroup(this.getParent(),Settings.i18n().tr("welcome"));
-		
-		group.addText("this page intentionally left blank ;)",false);
+		GUI.getView().setTitle(Settings.i18n().tr("Kontoplaner plugin"));
+
+		LabelGroup group = new LabelGroup(this.getParent(),Settings.i18n().tr("Willkommen"));
+
+		group.addText(Settings.i18n().tr("Um auf Ihre Kontoliste zu wechseln klicken Sie im Menü auf Kontenliste"),false);
 
 	}
 
@@ -57,6 +57,9 @@ public class Welcome extends AbstractView
 
 /**********************************************************************
  * $Log: Welcome.java,v $
+ * Revision 1.3  2006/11/20 20:10:30  pallo
+ * added willkommen
+ *
  * Revision 1.2  2006/11/20 20:05:32  pallo
  * changed author
  *
