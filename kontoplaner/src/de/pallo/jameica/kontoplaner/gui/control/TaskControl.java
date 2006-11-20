@@ -1,12 +1,12 @@
 /**********************************************************************
  * $Source: /home/xubuntu/berlios_backup/github/tmp-cvs/kontoplaner/Repository/kontoplaner/src/de/pallo/jameica/kontoplaner/gui/control/TaskControl.java,v $
- * $Revision: 1.2 $
- * $Date: 2006/11/20 19:08:00 $
+ * $Revision: 1.3 $
+ * $Date: 2006/11/20 20:05:32 $
  * $Author: pallo $
  * $Locker:  $
  * $State: Exp $
  *
- * Copyright (c) by willuhn.webdesign
+ * Copyright (c) by pallo
  * All rights reserved
  *
  **********************************************************************/
@@ -81,11 +81,11 @@ public class TaskControl extends AbstractControl
 	{
 		if (referencekonto != null)
 			return referencekonto;
-		
+
 		// this custom widget contains two parts.
 		// 1) a readonly text field to show up the choosen project name
 		// 2) a button behind that opens a dialog, containing a list of existing projects.
-		
+
 		// first we have to create the dialog
 		GenericIterator projects = Settings.getDBService().createList(Referencekonto.class);
 		ListDialog d = new ListDialog(projects,ListDialog.POSITION_MOUSE);
@@ -102,7 +102,7 @@ public class TaskControl extends AbstractControl
       		return;
       	if (!(event.data instanceof Referencekonto))
       		return;
-      		
+
 				try
 				{
 					referencekonto.setText(((Referencekonto)event.data).getName());
@@ -114,7 +114,7 @@ public class TaskControl extends AbstractControl
 				}
       }
     });
-    
+
     Referencekonto referencekonto = getTask().getReferencekonto();
 
 		// the initial choosen project
@@ -263,7 +263,7 @@ public class TaskControl extends AbstractControl
   }
 
     /**
-	 * This method stores the task using the current values. 
+	 * This method stores the task using the current values.
 	 */
     public void handleStore()
     {
@@ -335,6 +335,9 @@ public class TaskControl extends AbstractControl
 
 /**********************************************************************
  * $Log: TaskControl.java,v $
+ * Revision 1.3  2006/11/20 20:05:32  pallo
+ * changed author
+ *
  * Revision 1.2  2006/11/20 19:08:00  pallo
  * renamed some files from prioject to Referencekonten and some translations form english to german
  *

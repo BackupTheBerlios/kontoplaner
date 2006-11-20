@@ -1,12 +1,12 @@
 /**********************************************************************
  * $Source: /home/xubuntu/berlios_backup/github/tmp-cvs/kontoplaner/Repository/kontoplaner/src/de/pallo/jameica/kontoplaner/Settings.java,v $
- * $Revision: 1.1 $
- * $Date: 2006/11/20 17:48:44 $
+ * $Revision: 1.2 $
+ * $Date: 2006/11/20 20:05:32 $
  * $Author: pallo $
  * $Locker:  $
  * $State: Exp $
  *
- * Copyright (c) by willuhn.webdesign
+ * Copyright (c) by pallo
  * All rights reserved
  *
  **********************************************************************/
@@ -24,7 +24,7 @@ import de.willuhn.util.I18N;
 
 
 /**
- * @author willuhn
+ * @author pallo
  * This class holds some settings for our plugin.
  */
 public class Settings
@@ -124,7 +124,10 @@ public class Settings
 
 /**********************************************************************
  * $Log: Settings.java,v $
- * Revision 1.1  2006/11/20 17:48:44  pallo
- * Initial revision
+ * Revision 1.2  2006/11/20 20:05:32  pallo
+ * changed author
+ *
+ * Revision 1.1.1.1  2006/11/20 17:48:44  pallo
+ * no message
  *
  **********************************************************************/

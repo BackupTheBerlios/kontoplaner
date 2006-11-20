@@ -1,12 +1,12 @@
 /**********************************************************************
  * $Source: /home/xubuntu/berlios_backup/github/tmp-cvs/kontoplaner/Repository/kontoplaner/src/de/pallo/jameica/kontoplaner/gui/menu/TaskListMenu.java,v $
- * $Revision: 1.2 $
- * $Date: 2006/11/20 20:01:52 $
+ * $Revision: 1.3 $
+ * $Date: 2006/11/20 20:05:32 $
  * $Author: pallo $
  * $Locker:  $
  * $State: Exp $
  *
- * Copyright (c) by willuhn.webdesign
+ * Copyright (c) by pallo
  * All rights reserved
  *
  **********************************************************************/
@@ -23,7 +23,7 @@ import de.willuhn.jameica.gui.parts.ContextMenuItem;
 import de.willuhn.util.ApplicationException;
 
 /**
- * Prepared context menu for task tables. 
+ * Prepared context menu for task tables.
  */
 public class TaskListMenu extends ContextMenu
 {
@@ -58,6 +58,9 @@ public class TaskListMenu extends ContextMenu
 
 /**********************************************************************
  * $Log: TaskListMenu.java,v $
+ * Revision 1.3  2006/11/20 20:05:32  pallo
+ * changed author
+ *
  * Revision 1.2  2006/11/20 20:01:52  pallo
  * added help and made translations
  *

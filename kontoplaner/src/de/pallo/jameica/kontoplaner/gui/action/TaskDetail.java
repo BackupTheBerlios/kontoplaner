@@ -1,12 +1,12 @@
 /**********************************************************************
  * $Source: /home/xubuntu/berlios_backup/github/tmp-cvs/kontoplaner/Repository/kontoplaner/src/de/pallo/jameica/kontoplaner/gui/action/TaskDetail.java,v $
- * $Revision: 1.2 $
- * $Date: 2006/11/20 19:08:00 $
+ * $Revision: 1.3 $
+ * $Date: 2006/11/20 20:05:32 $
  * $Author: pallo $
  * $Locker:  $
  * $State: Exp $
  *
- * Copyright (c) by willuhn.webdesign
+ * Copyright (c) by pallo
  * All rights reserved
  *
  **********************************************************************/
@@ -34,11 +34,11 @@ public class TaskDetail implements Action
   {
 
 		Task task = null;
-		
+
 		// check if the context is a task
 		if (context != null && (context instanceof Task))
 			task = (Task) context;
-		
+
 
 		// context null?
 		// --> create a new task
@@ -82,6 +82,9 @@ public class TaskDetail implements Action
 
 /**********************************************************************
  * $Log: TaskDetail.java,v $
+ * Revision 1.3  2006/11/20 20:05:32  pallo
+ * changed author
+ *
  * Revision 1.2  2006/11/20 19:08:00  pallo
  * renamed some files from prioject to Referencekonten and some translations form english to german
  *

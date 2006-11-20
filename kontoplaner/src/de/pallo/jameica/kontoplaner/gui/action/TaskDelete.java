@@ -1,12 +1,12 @@
 /**********************************************************************
  * $Source: /home/xubuntu/berlios_backup/github/tmp-cvs/kontoplaner/Repository/kontoplaner/src/de/pallo/jameica/kontoplaner/gui/action/TaskDelete.java,v $
- * $Revision: 1.1 $
- * $Date: 2006/11/20 17:48:45 $
+ * $Revision: 1.2 $
+ * $Date: 2006/11/20 20:05:32 $
  * $Author: pallo $
  * $Locker:  $
  * $State: Exp $
  *
- * Copyright (c) by willuhn.webdesign
+ * Copyright (c) by pallo
  * All rights reserved
  *
  **********************************************************************/
@@ -67,7 +67,10 @@ public class TaskDelete implements Action
 
 /**********************************************************************
  * $Log: TaskDelete.java,v $
- * Revision 1.1  2006/11/20 17:48:45  pallo
- * Initial revision
+ * Revision 1.2  2006/11/20 20:05:32  pallo
+ * changed author
+ *
+ * Revision 1.1.1.1  2006/11/20 17:48:45  pallo
+ * no message
  *
  **********************************************************************/

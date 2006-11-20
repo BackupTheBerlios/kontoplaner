@@ -1,12 +1,12 @@
 /**********************************************************************
  * $Source: /home/xubuntu/berlios_backup/github/tmp-cvs/kontoplaner/Repository/kontoplaner/src/de/pallo/jameica/kontoplaner/server/TaskImpl.java,v $
- * $Revision: 1.2 $
- * $Date: 2006/11/20 19:08:00 $
+ * $Revision: 1.3 $
+ * $Date: 2006/11/20 20:05:32 $
  * $Author: pallo $
  * $Locker:  $
  * $State: Exp $
  *
- * Copyright (c) by willuhn.webdesign
+ * Copyright (c) by pallo
  * All rights reserved
  *
  **********************************************************************/
@@ -86,7 +86,7 @@ public class TaskImpl extends AbstractDBObject implements Task
 		try {
 			if (getName() == null || getName().length() == 0)
 				throw new ApplicationException(Settings.i18n().tr("Please enter a task name"));
-			
+
 			if (getReferencekonto() == null)
 				throw new ApplicationException(Settings.i18n().tr("Please choose a konto"));
 
@@ -481,6 +481,9 @@ public class TaskImpl extends AbstractDBObject implements Task
 
 /**********************************************************************
  * $Log: TaskImpl.java,v $
+ * Revision 1.3  2006/11/20 20:05:32  pallo
+ * changed author
+ *
  * Revision 1.2  2006/11/20 19:08:00  pallo
  * renamed some files from prioject to Referencekonten and some translations form english to german
  *
