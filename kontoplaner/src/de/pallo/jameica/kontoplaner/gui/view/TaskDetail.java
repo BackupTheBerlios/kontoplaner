@@ -1,7 +1,7 @@
 /**********************************************************************
  * $Source: /home/xubuntu/berlios_backup/github/tmp-cvs/kontoplaner/Repository/kontoplaner/src/de/pallo/jameica/kontoplaner/gui/view/TaskDetail.java,v $
- * $Revision: 1.1 $
- * $Date: 2006/11/20 17:48:47 $
+ * $Revision: 1.2 $
+ * $Date: 2006/11/20 19:08:00 $
  * $Author: pallo $
  * $Locker:  $
  * $State: Exp $
@@ -43,7 +43,7 @@ public class TaskDetail extends AbstractView
 		LabelGroup group = new LabelGroup(getParent(),Settings.i18n().tr("Task details"));
     
 		// all all input fields to the group.
-		group.addLabelPair(Settings.i18n().tr("Project"),     control.getReferencekonto());
+		group.addLabelPair(Settings.i18n().tr("Konto"),     control.getReferencekonto());
 		group.addLabelPair(Settings.i18n().tr("Name"),        control.getName());		group.addLabelPair(Settings.i18n().tr("Comment"), 		control.getComment());
         group.addLabelPair(Settings.i18n().tr("Startdatum"), control.getStartdatum());
         group.addLabelPair(Settings.i18n().tr("Zieldatum"), control.getEnddatum());
@@ -56,9 +56,9 @@ public class TaskDetail extends AbstractView
         // add some buttons
 		ButtonArea buttons = new ButtonArea(getParent(),4);
 
-		buttons.addButton(Settings.i18n().tr("<< Back"),        new Back());
-		buttons.addButton(Settings.i18n().tr("Delete Task"),		new TaskDelete(),control.getCurrentObject());
-		buttons.addButton(Settings.i18n().tr("Store Task"),  		new Action()
+		buttons.addButton(Settings.i18n().tr("<< Zurück"),        new Back());
+		buttons.addButton(Settings.i18n().tr("Task löschen"),		new TaskDelete(),control.getCurrentObject());
+		buttons.addButton(Settings.i18n().tr("Task speichern"),  		new Action()
 		{
 			public void handleAction(Object context) throws ApplicationException
 			{
@@ -80,7 +80,10 @@ public class TaskDetail extends AbstractView
 
 /**********************************************************************
  * $Log: TaskDetail.java,v $
- * Revision 1.1  2006/11/20 17:48:47  pallo
- * Initial revision
+ * Revision 1.2  2006/11/20 19:08:00  pallo
+ * renamed some files from prioject to Referencekonten and some translations form english to german
+ *
+ * Revision 1.1.1.1  2006/11/20 17:48:47  pallo
+ * no message
  *
  **********************************************************************/

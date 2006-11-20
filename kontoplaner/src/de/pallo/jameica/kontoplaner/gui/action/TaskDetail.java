@@ -1,7 +1,7 @@
 /**********************************************************************
  * $Source: /home/xubuntu/berlios_backup/github/tmp-cvs/kontoplaner/Repository/kontoplaner/src/de/pallo/jameica/kontoplaner/gui/action/TaskDetail.java,v $
- * $Revision: 1.1 $
- * $Date: 2006/11/20 17:48:45 $
+ * $Revision: 1.2 $
+ * $Date: 2006/11/20 19:08:00 $
  * $Author: pallo $
  * $Locker:  $
  * $State: Exp $
@@ -62,7 +62,7 @@ public class TaskDetail implements Action
 			{
 				Referencekonto referencekonto = (Referencekonto) context;
 				if (referencekonto.isNewObject())
-					throw new ApplicationException(Settings.i18n().tr("Please store the project first"));
+					throw new ApplicationException(Settings.i18n().tr("Please store the referencekonto first"));
 				task = (Task) Settings.getDBService().createObject(Task.class,null);
 				task.setReferencekonto(referencekonto);
 			}
@@ -82,7 +82,10 @@ public class TaskDetail implements Action
 
 /**********************************************************************
  * $Log: TaskDetail.java,v $
- * Revision 1.1  2006/11/20 17:48:45  pallo
- * Initial revision
+ * Revision 1.2  2006/11/20 19:08:00  pallo
+ * renamed some files from prioject to Referencekonten and some translations form english to german
+ *
+ * Revision 1.1.1.1  2006/11/20 17:48:45  pallo
+ * no message
  *
  **********************************************************************/

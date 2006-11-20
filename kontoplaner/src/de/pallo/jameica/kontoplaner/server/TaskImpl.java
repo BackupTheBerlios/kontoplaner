@@ -1,7 +1,7 @@
 /**********************************************************************
  * $Source: /home/xubuntu/berlios_backup/github/tmp-cvs/kontoplaner/Repository/kontoplaner/src/de/pallo/jameica/kontoplaner/server/TaskImpl.java,v $
- * $Revision: 1.1 $
- * $Date: 2006/11/20 17:48:48 $
+ * $Revision: 1.2 $
+ * $Date: 2006/11/20 19:08:00 $
  * $Author: pallo $
  * $Locker:  $
  * $State: Exp $
@@ -88,16 +88,16 @@ public class TaskImpl extends AbstractDBObject implements Task
 				throw new ApplicationException(Settings.i18n().tr("Please enter a task name"));
 			
 			if (getReferencekonto() == null)
-				throw new ApplicationException(Settings.i18n().tr("Please choose a project"));
+				throw new ApplicationException(Settings.i18n().tr("Please choose a konto"));
 
 			if (getReferencekonto().isNewObject())
-				throw new ApplicationException(Settings.i18n().tr("Please store project first"));
+				throw new ApplicationException(Settings.i18n().tr("Please store konto first"));
 
 		}
 		catch (RemoteException e)
 		{
-			Logger.error("insert check of project failed",e);
-			throw new ApplicationException(Settings.i18n().tr("unable to store project, please check the system log"));
+			Logger.error("insert check of konto failed",e);
+			throw new ApplicationException(Settings.i18n().tr("unable to store konto, please check the system log"));
 		}
   }
 
@@ -481,7 +481,10 @@ public class TaskImpl extends AbstractDBObject implements Task
 
 /**********************************************************************
  * $Log: TaskImpl.java,v $
- * Revision 1.1  2006/11/20 17:48:48  pallo
- * Initial revision
+ * Revision 1.2  2006/11/20 19:08:00  pallo
+ * renamed some files from prioject to Referencekonten and some translations form english to german
+ *
+ * Revision 1.1.1.1  2006/11/20 17:48:48  pallo
+ * no message
  *
  **********************************************************************/

@@ -1,7 +1,7 @@
 /**********************************************************************
  * $Source: /home/xubuntu/berlios_backup/github/tmp-cvs/kontoplaner/Repository/kontoplaner/src/de/pallo/jameica/kontoplaner/gui/view/ReferencekontenDetail.java,v $
- * $Revision: 1.1 $
- * $Date: 2006/11/20 17:48:46 $
+ * $Revision: 1.2 $
+ * $Date: 2006/11/20 19:08:00 $
  * $Author: pallo $
  * $Locker:  $
  * $State: Exp $
@@ -59,11 +59,11 @@ public class ReferencekontenDetail extends AbstractView
         ButtonArea buttons = new ButtonArea(getParent(),4);
 
         buttons.addButton(Settings.i18n().tr("<< Zurück"),                    	new Back());
-        buttons.addButton(Settings.i18n().tr("New Task within this Project"), new TaskDetail(),control.getCurrentObject());
+        buttons.addButton(Settings.i18n().tr("Neuer Task für dieses Konto"), new TaskDetail(),control.getCurrentObject());
 
 
         // show task tasks in this project
-        new Headline(getParent(),Settings.i18n().tr("Tasks within this project"));
+        new Headline(getParent(),Settings.i18n().tr("Tasks dieses Kontos"));
         control.getTaskList().paint(getParent());
 
 	}
@@ -83,7 +83,10 @@ public class ReferencekontenDetail extends AbstractView
 
 /**********************************************************************
  * $Log: ReferencekontenDetail.java,v $
- * Revision 1.1  2006/11/20 17:48:46  pallo
- * Initial revision
+ * Revision 1.2  2006/11/20 19:08:00  pallo
+ * renamed some files from prioject to Referencekonten and some translations form english to german
+ *
+ * Revision 1.1.1.1  2006/11/20 17:48:46  pallo
+ * no message
  *
  **********************************************************************/

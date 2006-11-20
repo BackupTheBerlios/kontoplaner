@@ -32,7 +32,7 @@
 		<item name="Kontenplanung">
 
 
-		    <item name="Kontenliste" shortcut="ALT+P" action="de.pallo.jameica.kontoplaner.gui.action.ProjectList" />
+		    <item name="Kontenliste" shortcut="ALT+P" action="de.pallo.jameica.kontoplaner.gui.action.ReferencekontenList" />
 
 			<!-- use "-" as name to create a separator //-->
 		    <item name="-" />
@@ -48,7 +48,7 @@
 	  <!-- Same procedure as in the menu tag //-->
   
 	  <item name="Kontenplanung"		icon-close="folder.gif" icon-open="folderopen.gif" 	action="de.pallo.jameica.kontoplaner.gui.action.Welcome">
-	    <item name="Kontenliste" 			icon-close="page.gif" 	icon-open="page.gif" 		action="de.pallo.jameica.kontoplaner.gui.action.ProjectList" />
+	    <item name="Kontenliste" 			icon-close="page.gif" 	icon-open="page.gif" 		action="de.pallo.jameica.kontoplaner.gui.action.ReferencekontenList" />
 	  </item>
    </navigation>
 

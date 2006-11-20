@@ -1,7 +1,7 @@
 /**********************************************************************
  * $Source: /home/xubuntu/berlios_backup/github/tmp-cvs/kontoplaner/Repository/kontoplaner/src/de/pallo/jameica/kontoplaner/gui/control/ReferencekontenControl.java,v $
- * $Revision: 1.1 $
- * $Date: 2006/11/20 17:48:46 $
+ * $Revision: 1.2 $
+ * $Date: 2006/11/20 19:08:00 $
  * $Author: pallo $
  * $Locker:  $
  * $State: Exp $
@@ -270,7 +270,7 @@ public class ReferencekontenControl extends AbstractControl
         TaskListMenu tlm = new TaskListMenu();
 
         // we add an additional menu item to create tasks with predefined referencekonto.
-        tlm.addItem(new ContextMenuItem(Settings.i18n().tr("Create new task within this Project"),new Action()
+        tlm.addItem(new ContextMenuItem(Settings.i18n().tr("Neuer Task für dieses Konto"),new Action()
     {
       public void handleAction(Object context) throws ApplicationException
       {
@@ -294,7 +294,10 @@ public class ReferencekontenControl extends AbstractControl
 
 /**********************************************************************
  * $Log: ReferencekontenControl.java,v $
- * Revision 1.1  2006/11/20 17:48:46  pallo
- * Initial revision
+ * Revision 1.2  2006/11/20 19:08:00  pallo
+ * renamed some files from prioject to Referencekonten and some translations form english to german
+ *
+ * Revision 1.1.1.1  2006/11/20 17:48:46  pallo
+ * no message
  *
  **********************************************************************/
