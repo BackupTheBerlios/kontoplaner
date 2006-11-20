@@ -39,11 +39,11 @@
 
 		<path id="compilepath">
             <pathelement location="lib/hibiscus.jar"/>
-            <pathelement location="../jameica-1.4/lib/swt/win32/swt.jar"/>
-			<pathelement location="../jameica-1.4/bin/"/>
-		    <pathelement location="../jameica-1.4/lib/de_willuhn_ds/de_willuhn_ds.jar" />
-		    <pathelement location="../jameica-1.4/jameica.jar" />
-            <pathelement location="../jameica-1.4/lib/de_willuhn_util/de_willuhn_util.jar" />
+            <pathelement location="../../jameica-1.4/lib/swt/win32/swt.jar"/>
+			<pathelement location="../../jameica-1.4/bin/"/>
+		    <pathelement location="../../jameica-1.4/lib/de_willuhn_ds/de_willuhn_ds.jar" />
+		    <pathelement location="../../jameica-1.4/jameica.jar" />
+            <pathelement location="../../jameica-1.4/lib/de_willuhn_util/de_willuhn_util.jar" />
 		</path>
 
     </target>
