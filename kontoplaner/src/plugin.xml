@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="ISO8859-1"?> 
+
+<plugin name="Kontoplaner" version="1.0" class="de.pallo.jameica.kontoplaner.KontoplanerPlugin">
+
+	<description>Kontoplaner Plugin for Jameica</description>
+	<url></url>
+	<homepage>http://kontoplaner.berlios.de</homepage>
+	<license>GPL - http://www.gnu.org/copyleft/gpl.html</license>
+
+	<!-- The content of the following tag is displayed in the menu bar. //-->
+	<menu>
+
+		<!-- 
+		
+		Every item must have a "name" and an "action" attribute.
+		the class defined in the attribute "action" has to be a java class name
+		which implements from de.willuhn.jameica.gui.Action.
+	
+		Additionally you can specify a shortcut using "CTRL" or "ALT"
+		as modifier key followed by "+" and a single key.
+	
+		Hint: You can create submenus by cascading "item" tags
+
+	    <item
+	    	name="entry name"
+	    	action="com.foo.bar.gui.actions.ExampleAction"
+	    	shortcut="CTRL+E"
+	    />
+	
+		//-->
+
+		<item name="Kontenplanung">
+
+
+		    <item name="Kontenliste" shortcut="ALT+P" action="de.pallo.jameica.kontoplaner.gui.action.ProjectList" />
+
+			<!-- use "-" as name to create a separator //-->
+		    <item name="-" />
+
+		    <item name="About" action="de.pallo.jameica.kontoplaner.gui.action.About" />
+		</item>
+	</menu>
+
+	<!-- the content of this tag will appear within the navigation tree on the left hand //-->
+
+	<navigation>
+
+	  <!-- Same procedure as in the menu tag //-->
+  
+	  <item name="Kontenplanung"		icon-close="folder.gif" icon-open="folderopen.gif" 	action="de.pallo.jameica.kontoplaner.gui.action.Welcome">
+	    <item name="Kontenliste" 			icon-close="page.gif" 	icon-open="page.gif" 		action="de.pallo.jameica.kontoplaner.gui.action.ProjectList" />
+	  </item>
+   </navigation>
+
+	<!--
+		Here you can define your service classes. This is typically a
+	    database connection. You can list more than one service in this
+	    section. By using the depends attribute you can define a startup order
+	    for your services. Example:
+
+		<services>
+			<service name="base-service" depends="" autostart="true" class="BaseService" />
+			<service name="extended-service" depends="base-service" autostart="true" class="ExtendedService" />
+		</services>
+	    
+	//-->
+	    
+	<services>
+		<service name="kontoplanerdb" depends="" autostart="true"
+				 class="de.pallo.jameica.kontoplaner.server.KontoplanerDBServiceImpl" />
+	</services>
+</plugin>
+
