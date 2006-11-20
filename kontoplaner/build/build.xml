@@ -103,8 +103,8 @@
 		<copy todir="${project.zipdir}/sql">
 			<fileset dir="${sql.dir}"/>
 		</copy>
-
-		<!-- Jetzt muessen wir noch das ZIP-File erzeugen und signieren -->
+    <copy file="${class.dir}/plugin.xml" todir="${project.zipdir}" />
+        <!-- Jetzt muessen wir noch das ZIP-File erzeugen und signieren -->
 		<zip destfile="${project.release}/${project.zipfilename}">
 		    <fileset dir="${project.release}">
 		    	<include name="${define.pluginname}"/>
@@ -134,7 +134,7 @@
 		<fileset dir=".">
 			<include name=".project" />
 			<include name=".classpath" />
-			<include name="${src.dir}/**" />
+            <include name="${src.dir}/**" />
 			<include name="${sql.dir}/**" />
 			<include name="${build.dir}/**" />
 			<exclude name="${build.dir}/BUILD" />
@@ -148,7 +148,7 @@
   </target>
 
     <target name="clean" description="cleanup">
-       <!-- <delete dir="${project.tmp}"/>-->
+       <delete dir="${project.tmp}"/>
     </target>
 
 
